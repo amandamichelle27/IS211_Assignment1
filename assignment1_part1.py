@@ -3,8 +3,10 @@
 def listDivide(numbers, divide=2):
     return sum(1 for number in numbers if not number % divide)
 
+
 class ListDivideException(Exception):
     pass
+
 
 def testListDivide():
     if (listDivide([1, 2, 3, 4, 5]) != 2 or
@@ -14,6 +16,6 @@ def testListDivide():
         listDivide([1, 2, 3, 4, 5], 1) != 5):
         raise ListDivideException()
 
+
 if __name__ == "__main__":
     testListDivide()
-
