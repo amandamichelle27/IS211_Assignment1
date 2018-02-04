@@ -1,5 +1,6 @@
 #!/usr/bin/python
 
+
 def listDivide(numbers, divide=2):
     return sum(1 for number in numbers if not number % divide)
 
